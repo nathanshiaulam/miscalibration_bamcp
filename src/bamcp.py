@@ -285,7 +285,6 @@ class BAMCP:
     def _setFlags(self, options):
 
         if ops.OVER_GENERALIZE in options:
-            print "Miscallibration: Overgeneralize"
             self.overgeneralize = True
         
         if ops.SAMPLE_COST in options:
