@@ -22,7 +22,7 @@ rand = np.random.rand
 def main():
     args = sys.argv
 
-    options = args[1].split()
+    options = list(args[1])
     environment = args[2]
 
     arr = ast.literal_eval(args[3])
@@ -34,21 +34,15 @@ def main():
     num_steps = int(args[7])
     num_trials = int(args[8])
 
-    options_desc = []
-    for op in options:
-        if ops.SAMPLE_COST == op:
-            options_desc.append("Cost to Sampling")
-        if ops.OVER_GENERALIZE == op:
-            options_desc.append("Over generalize action outcome")
-        if ops.UNFAVORABLE_PRIOR == op:
-            options_desc.append("Unfavorable prior for strong bandit")
-        if ops.NONE == op:
-            options_desc.append("None")
-
+    options_desc = fetchOpsDesc(options)
     env_desc = fetchEnvDesc(environment)
+
+    print "SIMULATE WITH PROPERTIES:"
+    print "---------------------------"
     print "BAMCP with ENV: %s" % env_desc
     print "Miscalibration with Options: %s" % str(options_desc)
     print "BAMCP Settings: Discount: %f, Epsilon: %f, Num_Sims: %d, Num_Steps: %d, Num_Trials: %d" % (discount, epsilon, num_sims, num_steps, num_trials)
+    print "---------------------------"
 
     vals = {
         params.ENV : environment,
@@ -69,9 +63,24 @@ def main():
 
 def fetchEnvDesc(env):
     if env == envs.DETERMINISTIC:
-        return "2-armed Bernoulli Bandits with a deterministic arm with a value of .5"
+        assert 1 in p_arr, "At least one arm must be deterministic"
+        return envs.DETERMINISTIC_DESC
+
     if env == envs.NORM_BANDITS:
-        return "N-armed Bernoulli Bandits"
+        return envs.NORM_BANDITS_DESC
+
+def fetchOpsDesc(options):
+    options_desc = []
+    for op in options:
+        if ops.SAMPLE_COST == op:
+            options_desc.append(ops.SAMPLE_COST_DESC)
+        if ops.OVER_GENERALIZE == op:
+            options_desc.append(ops.OVER_GENERALIZE_DESC)
+        if ops.UNFAVORABLE_PRIOR == op:
+            options_desc.append(ops.UNFAVORABLE_PRIOR_DESC)
+        if ops.NONE == op:
+            options_desc.append("None")
+    return options_desc
 
 def loadGittins(filename):
 
@@ -143,14 +152,15 @@ def sim_norm_bandits(vals):
     incorrect = 0
 
     max_bandit = np.argmax(vals[params.P_ARR])
-
+    max_bandit_p = vals[params.P_ARR][max_bandit]
     for k in range(0, vals[params.NUM_TRIALS]):
         trial_correct = 0
         trial_incorrect = 0
         bamcp = BAMCP(vals[params.ENV], b, alpha, beta, vals[params.DISCOUNT], vals[params.EPSILON], vals[params.OPTIONS])
         for step in range(vals[params.NUM_STEPS]):
             val = bamcp.search(vals[params.NUM_SIMS], 0)
-            if val == max_bandit:
+            val_p = vals[params.P_ARR][val]
+            if val_p == max_bandit_p:
                 trial_correct += 1
             else: 
                 trial_incorrect += 1
@@ -218,7 +228,7 @@ def analyze_choice_data(filename, options):
     plt.xlabel("Alpha")
     plt.ylabel("Beta")
 
-    f.savefig('figures/gittins_choice.png')
+    f.savefig('../figures/gittins_choice.png')
 
     raw_input()
 
