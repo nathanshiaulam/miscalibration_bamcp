@@ -1,24 +1,22 @@
-from pymc import rbeta
 import numpy as np
 import math
 import ast
 import random
 import fileinput, sys
 
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import show
+
 import bandits
 import node
 import history
 from bamcp import BAMCP
-
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import show
 
 from constants import Flags as ops
 from constants import Params as params
 from constants import Envs as envs
 
 rand = np.random.rand
-
 def main():
     args = sys.argv
 
@@ -34,14 +32,29 @@ def main():
     num_steps = int(args[7])
     num_trials = int(args[8])
 
+    """ OPTIONAL ARGS """
+    alpha = np.zeros(shape=(1, len(p_arr)))
+    beta = np.zeros(shape=(1, len(p_arr)))
+    verbose = 0
+
+    if len(args) > 9:
+        alpha = np.array(ast.literal_eval(args[9]))
+    if len(args) > 10:
+        beta = np.array(ast.literal_eval(args[10]))
+    if len(args) > 11:
+        verbose = int(args[11])
+
+
     options_desc = fetchOpsDesc(options)
-    env_desc = fetchEnvDesc(environment)
+    env_desc = fetchEnvDesc(environment, p_arr)
 
     print "SIMULATE WITH PROPERTIES:"
     print "---------------------------"
     print "BAMCP with ENV: %s" % env_desc
     print "Miscalibration with Options: %s" % str(options_desc)
     print "BAMCP Settings: Discount: %f, Epsilon: %f, Num_Sims: %d, Num_Steps: %d, Num_Trials: %d" % (discount, epsilon, num_sims, num_steps, num_trials)
+    print "BAMCP Priors: (Alpha=%s, Beta=%s)" % (str(alpha), str(beta))
+    print "True bandit probabilities: %s" % str(p_arr)
     print "---------------------------"
 
     vals = {
@@ -53,21 +66,26 @@ def main():
         params.NUM_SIMS : num_sims,
         params.NUM_STEPS : num_steps,
         params.NUM_TRIALS : num_trials,
+        params.ALPHA : alpha,
+        params.BETA : beta, 
+        params.VERBOSE : verbose,
     }
 
-    if envs.DETERMINISTIC == environment:
-        sim_deterministic(vals)
+    if envs.TEST_GITTINS == environment:
+        vals[params.NUM_STEPS] = 1
+        testGittins(vals)
 
     if envs.NORM_BANDITS == environment:
-        sim_norm_bandits(vals)
+        bernoulliBandits(vals)
 
-def fetchEnvDesc(env):
-    if env == envs.DETERMINISTIC:
+def fetchEnvDesc(env, p_arr):
+    if env == envs.TEST_GITTINS:
         assert 1 in p_arr, "At least one arm must be deterministic"
-        return envs.DETERMINISTIC_DESC
+        return envs.TEST_GITTINS_DESC
 
     if env == envs.NORM_BANDITS:
         return envs.NORM_BANDITS_DESC
+
 
 def fetchOpsDesc(options):
     options_desc = []
@@ -78,6 +96,10 @@ def fetchOpsDesc(options):
             options_desc.append(ops.OVER_GENERALIZE_DESC)
         if ops.UNFAVORABLE_PRIOR == op:
             options_desc.append(ops.UNFAVORABLE_PRIOR_DESC)
+        if ops.FORGET_RATE == op:
+            options_desc.append(ops.FORGET_RATE_DESC)
+        if ops.UNFAVORABLE_ENV == op:
+            options_desc.append(ops.UNFAVORABLE_ENV_DESC)
         if ops.NONE == op:
             options_desc.append("None")
     return options_desc
@@ -94,12 +116,9 @@ def loadGittins(filename):
             matrix[i][j] = vals[j]
     return matrix
 
-def sim_deterministic(vals):
+def testGittins(vals):
     
     matrix = loadGittins("../data/gittins_indices.txt")
-
-    # Probability for ea. bandit
-    b = bandits.Bandits(vals[params.P_ARR]) 
 
     for i in range(0, len(matrix)):
         for j in range(0, len(matrix)):
@@ -107,21 +126,18 @@ def sim_deterministic(vals):
             gittins_index = float(matrix[i][j])
             alpha = np.array([[0, j + 1]])
             beta = np.array([[0, i + 1]])
+            vals[params.ALPHA] = alpha
+            vals[params.BETA] = beta
             print "Gittins Index: " + str(gittins_index)
             print "(Alpha, Beta): " + str((alpha[0][1], beta[0][1]))
-            
-            if gittins_index <= .5:
-                print "Should choose 0."
-            else:
-                print "Should choose 1."
-
+ 
             correct = 0
             incorrect = 0
             sys.stdout.flush()
             for k in range(0, vals[params.NUM_TRIALS]):
                 trial_correct = 0
                 trial_incorrect = 0
-                bamcp = BAMCP(vals[params.ENV], b, alpha, beta, vals[params.DISCOUNT], vals[params.EPSILON], vals[params.OPTIONS])
+                bamcp = BAMCP(vals)
                 for step in range(vals[params.NUM_STEPS]):
                     val = bamcp.search(vals[params.NUM_SIMS], 0)
                     if gittins_index <= .5:
@@ -140,23 +156,20 @@ def sim_deterministic(vals):
             print "Percent Correct: " + str(float(correct) / float(vals[params.NUM_TRIALS]))
             sys.stdout.flush()
 
-def sim_norm_bandits(vals):
-    
-    # Probability for ea. bandit
-    b = bandits.Bandits(vals[params.P_ARR]) 
-            
-    alpha = np.zeros(shape=(1, len(vals[params.P_ARR])))
-    beta = np.zeros(shape=(1, len(vals[params.P_ARR])))
+def bernoulliBandits(vals):
 
     correct = 0
     incorrect = 0
+
+    wins = np.zeros(shape=(1, len(vals[params.P_ARR])))
+    trials = np.zeros(shape=(1, len(vals[params.P_ARR])))
 
     max_bandit = np.argmax(vals[params.P_ARR])
     max_bandit_p = vals[params.P_ARR][max_bandit]
     for k in range(0, vals[params.NUM_TRIALS]):
         trial_correct = 0
         trial_incorrect = 0
-        bamcp = BAMCP(vals[params.ENV], b, alpha, beta, vals[params.DISCOUNT], vals[params.EPSILON], vals[params.OPTIONS])
+        bamcp = BAMCP(vals)
         for step in range(vals[params.NUM_STEPS]):
             val = bamcp.search(vals[params.NUM_SIMS], 0)
             val_p = vals[params.P_ARR][val]
@@ -165,10 +178,16 @@ def sim_norm_bandits(vals):
             else: 
                 trial_incorrect += 1
             sys.stdout.flush()
+        wins += bamcp.wins
+        trials += bamcp.trials
         correct += float(trial_correct) / int(vals[params.NUM_STEPS])
         incorrect += float(trial_incorrect) / float(vals[params.NUM_STEPS])
 
-    print "Percent Correct: " + str(float(correct) / float(vals[params.NUM_TRIALS]))
+    if vals[params.ENV] != envs.DETERMINISTIC:
+        print "Percent Correct: " + str(float(correct) / float(vals[params.NUM_TRIALS]))
+    
+    print "Wins: %s" % str(wins)
+    print "Trials: %s"  % str(trials)
 
     sys.stdout.flush()
 

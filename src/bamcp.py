@@ -1,59 +1,68 @@
 from pymc import rbeta
 import numpy as np
 import sys
-import bandits
+import random
 import math
 import ast
-import random
-import node
-import history
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import show
-from constants import Flags as ops
-from constants import Envs as envs
-
+import time
 import fileinput, sys
 
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import show
+
+import node
+import bandits
+import history
+from miscalibration import Miscalibration
+
+from constants import Flags as ops
+from constants import Envs as envs
+from constants import Params as params
+
 rand = np.random.rand
+
+""" DEBUGGING PURPOSES """
+start_time = time.clock()
+def timeDiff(other_time):
+    t = start_time - other_time
+    return t
 
 class BAMCP:
     # no. actions = no. bandits
     # each bandit has probability p
 
-    def __init__(self, env, bandits, alpha, beta, discount, epsilon, options):
+    def __init__(self, vals):
         
         """ INIT PARAMS"""
-        self.bandits = bandits
-        self.num_actions = len(bandits)
-        self.num_states = bandits.num_states
-        self.learn_rate = .2
-        self.discount = discount
-        self.c = 20
-        self.r_max = bandits.max_reward
-        self.epsilon = epsilon
-        start_state = 0
+        b = bandits.Bandits(vals[params.P_ARR]) 
 
-        """ MISCALIBRATION OPTIONS """
-        self.overgeneralize = False 
-        self.sample_cost = False
-        self.unfavorable_prior = False
+        self.options =  vals[params.OPTIONS]
 
-        self._setFlags(options)
+        self.bandits = b
+        self.num_actions = len(b)
+        self.num_states = b.num_states
+        self.learn_rate = params.LEARN_RATE
+        self.discount = vals[params.DISCOUNT]
+        self.c = params.EXPLORE_CONST
+        self.r_max = b.max_reward
+        self.epsilon = vals[params.EPSILON]
+        self.start_state = 0
+
+        self.num_steps = vals[params.NUM_STEPS]
+        self.steps_taken = 0
 
         """ ENVIRONMENT OPTIONS """
-        self.deterministic = False
+        self.test_gittins = False
 
-        self._setEnv(env)
-        
-        if not self.deterministic:
-            if self.unfavorable_prior:
-                best_bandit = np.argmax(self.bandits.p)
-                beta[start_state][best_bandit] += alpha[start_state][best_bandit] + ops.UNFAVORABLE_BETA_CONST
+        self._setEnv(vals[params.ENV])
 
         """ SET PRIOR """
         # Alpha/Beta values set via history
-        self.wins = np.array(alpha)
-        self.trials = np.array(alpha) + np.array(beta)
+        self.alpha = np.array(vals[params.ALPHA])
+        self.beta = np.array(vals[params.BETA])
+
+        self.wins = self.alpha
+        self.trials = self.alpha + self.beta
 
         # Total action and state count
         action_counts = np.zeros(self.num_actions)
@@ -73,6 +82,10 @@ class BAMCP:
         self.qnode_val = {}
         self.vnode_count = {}
 
+        """ MISCALIBRATION AGENT """
+        self.mc = Miscalibration(self)
+        self.mc.miscalibratePriors()
+
        
 
     def search(self, numSimulations, state):
@@ -85,6 +98,7 @@ class BAMCP:
         for i in range(0, numSimulations):
             # Sample distribution from prior for action transitions
             prior = rbeta(1 + self.wins[state], 1 + self.trials[state] - self.wins[state])
+
             # Create defensive copy of current history 
             start_hist = history.History(self.hist.getStateCounts(), self.hist.getActionCounts())
             self.simulate(prior, 0, state, start_hist)
@@ -92,14 +106,10 @@ class BAMCP:
         # Select action with highest Q-Value
         action = -1
         max_val = float("-inf")
-        print "Qnode Vals:"
-        print "Wins: %s" % str(self.wins)
-        print "Trials: %s" %str(self.trials)
 
         for i in range(0, self.num_actions):
             qnode = node.QNode(self.hist, state, i)
             val = self.qnode_val[qnode]
-            print val 
             if val > max_val:
                 max_val = val
                 action = i
@@ -107,19 +117,23 @@ class BAMCP:
         reward = self._pull(action, self.bandits.p)
 
         # Update history and prior based on observation
-        self.wins[state][action] += reward
-        self.trials[state][action] += 1
-        """ 
-        MISCALIBRATION: Generalizes success/failure
-        of bandit to all other bandits
-        """
-        if self.overgeneralize:
-            for i in range(self.num_actions):
-                if i != action:
-                    self.wins[state][i] += reward
-                    self.trials[state][i] += 1
+        win = (reward != 0 and not self.mc.sample_cost) or (reward != -ops.SAMPLE_COST_CONST and self.mc.sample_cost)
+        if win:
+            self.alpha[state][action] += 1
+        else:
+            self.beta[state][action] += 1 
 
         self.hist.updateHist(state, action)
+        self.steps_taken += 1
+
+
+        """ DEBUGGING PURPOSES """
+        other_time = time.clock()
+        time_diff = timeDiff(other_time)
+        print "Steps Taken: %d | Time Diff: %s" % (self.steps_taken, str(time_diff))
+
+        self.wins = self.alpha
+        self.trials = self.alpha + self.beta
 
         return action
 
@@ -149,7 +163,7 @@ class BAMCP:
 
             # Select initial action for rollout 
             action = self.rollout_policy(state, .2, hist, prior)
-            r = self._simulatePull(action, prior)
+            r = self._pull(action, prior)
 
             # Initialize new history <has'>
             new_hist = history.History(hist.getStateCounts(), hist.getActionCounts())
@@ -189,7 +203,7 @@ class BAMCP:
         actions = actions.flatten()
         action = random.choice(actions)
 
-        r = self._simulatePull(action, prior)
+        r = self._pull(action, prior)
 
         qnode = node.QNode(hist, state, action) # Current action node
 
@@ -235,8 +249,6 @@ class BAMCP:
             # Return sample of normalized distribution
             return self._sample(dist)
 
-        
-
 
     def rollout(self, prior, depth, state, hist):
 
@@ -244,7 +256,7 @@ class BAMCP:
             return 0
 
         action = self.rollout_policy(state, .2, hist, prior)
-        r = self._simulatePull(action, prior)
+        r = self._pull(action, prior)
 
         # Initialize new history <has'>
         new_hist = history.History(hist.getStateCounts(), hist.getActionCounts())
@@ -252,40 +264,19 @@ class BAMCP:
 
         return r + self.discount * self.rollout(prior, depth + 1, state, new_hist)
 
+    def _pull(self, action, dist):
 
-    def _simulatePull(self, action, dist):
-        if self.deterministic:
+        if self.test_gittins:
             if self.bandits.p[action] == 1:
-                if self.sample_cost:
-                    return 0
-                else:
-                    return .5
+                return .5
             else:
                 return rand() <= dist[action]
         else:
-            if self.sample_cost:
-                if action == 0:
-                    return 0
-                else:
-                    if rand() < .5:
-                        return ops.SAMPLE_COST_CONST
-                    else:
-                        return 1 - ops.SAMPLE_COST_CONST
+            if ops.NONE not in self.options:
+                return self.mc.miscalibratePull(action, dist)
         return rand() <= dist[action]
 
-    def _pull(self, action, dist):
-        if self.deterministic:
-            if self.bandits.p[action] == 1:
-                if self.sample_cost:
-                    return 0
-                else:
-                    return .5
-        else:
-            if self.sample_cost and action == 0:
-                return 0
-
-        return rand() <= dist[action]
-
+   
     def _normalize(self, dist):
         total = 0
         for i in range(0, len(dist)):
@@ -307,20 +298,8 @@ class BAMCP:
 
     def _setEnv(self, env):
 
-        if env == envs.DETERMINISTIC:
-            self.deterministic = True
-
-    def _setFlags(self, options):
-
-        if ops.OVER_GENERALIZE in options:
-            self.overgeneralize = True
-        
-        if ops.SAMPLE_COST in options:
-            self.sample_cost = True
-
-        if ops.UNFAVORABLE_PRIOR in options:
-            self.unfavorable_prior = True
-
+        if env == envs.TEST_GITTINS:
+            self.test_gittins = True
 
 if __name__ == "__main__":
     main()
