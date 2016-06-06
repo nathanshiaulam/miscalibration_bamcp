@@ -1,4 +1,3 @@
-from pymc import rbeta
 import numpy as np
 import sys
 

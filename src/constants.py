@@ -1,3 +1,4 @@
+import numpy as np
 class Params:
 
 	OPTIONS = 'options'
@@ -13,6 +14,9 @@ class Params:
 	VERBOSE = 'verbose'
 	LEARN_RATE = .2
 	EXPLORE_CONST = 20
+	COST = 'cost'
+	BAD_PRIOR = 'bad_prior'
+	FORGET_RATE = 'forget_rate'
 
 class Envs:
 
@@ -32,26 +36,34 @@ class Flags:
 
 	# Wrong Problem
 	SAMPLE_COST = 'c'
-	SAMPLE_COST_DESC = 'Sets a cost to sampling a bandit, with known bandit having a known value of 0.'
-	SAMPLE_COST_CONST = .9
+	SAMPLE_COST_DESC = 'Sets a cost to sampling a bandit, with known bandit having a value of 0.'
+	SAMPLE_COST_CONST = 0.0
+	SAMPLE_COST_FACTOR = 0.05
 
 	OVER_GENERALIZE = 'g'
 	OVER_GENERALIZE_DESC = 'Over generalize action outcome'
 
 	UNFAVORABLE_PRIOR = 'p'
-	UNFAVORABLE_PRIOR_DESC = 'Unfavorable prior for strongest bandit'
-	UNFAVORABLE_PRIOR_CONST = 100
-
-	ANHEDONIA = 'a'
-	ANHEDONIA_EPSILON = .4
+	UNFAVORABLE_PRIOR_DESC = 'Unfavorable prior for non-zero bandit(s)'
+	UNFAVORABLE_PRIOR_CONST = 0
+	UNFAVORABLE_PRIOR_FACTOR = 2
 
 	# Wrong Inference
 	FORGET_RATE = 'f'
 	FORGET_RATE_DESC = 'Increased forgetting-rate for a bandit'
-	FORGET_RATE_EPSILON = .5
+	FORGET_RATE_EPSILON = .01
+	FORGET_RATE_ALPHA = np.array([[0, 0]])
+	FORGET_RATE_BETA = np.array([[60, 0]])
 
 	# Wrong Environment
 	UNFAVORABLE_ENV = 'e'
 	UNFAVORABLE_ENV_DESC = 'Start agent off in unfavorable environment, then switch to normal one.'
 	UNFAVORABLE_ENV_TIME = 10
 	UNFAVORABLE_ENV_FACTOR = 100
+
+	TREMBLING_HAND = 't'
+	TREMBLING_HAND_DESC = 'Induce trembling hand- agent selects action at random with probability (1 - p)'
+	TREMBLING_HAND_CONST = .9
+
+	DO_NOTHING = 'd'
+	DO_NOTHING_DESC = 'Include a do-nothing bandit that returns 0 reward with probability 1'

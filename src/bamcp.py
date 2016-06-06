@@ -1,4 +1,3 @@
-from pymc import rbeta
 import numpy as np
 import sys
 import random
@@ -24,7 +23,7 @@ rand = np.random.rand
 """ DEBUGGING PURPOSES """
 start_time = time.clock()
 def timeDiff(other_time):
-    t = start_time - other_time
+    t = other_time - start_time
     return t
 
 class BAMCP:
@@ -38,6 +37,7 @@ class BAMCP:
 
         self.options =  vals[params.OPTIONS]
 
+        self.verbose = vals[params.VERBOSE]
         self.bandits = b
         self.num_actions = len(b)
         self.num_states = b.num_states
@@ -47,6 +47,10 @@ class BAMCP:
         self.r_max = b.max_reward
         self.epsilon = vals[params.EPSILON]
         self.start_state = 0
+        self.total_reward = 0
+        self.bandit_cost = vals[params.COST]
+        self.trembling_hand = 0.2
+        self.forget_rate = vals[params.FORGET_RATE]
 
         self.num_steps = vals[params.NUM_STEPS]
         self.steps_taken = 0
@@ -84,9 +88,8 @@ class BAMCP:
 
         """ MISCALIBRATION AGENT """
         self.mc = Miscalibration(self)
-        self.mc.miscalibratePriors()
-
-       
+        self.mc.miscalibratePriors(vals[params.BAD_PRIOR])
+    
 
     def search(self, numSimulations, state):
 
@@ -95,10 +98,12 @@ class BAMCP:
         self.qnode_count = {}
         self.qnode_val = {}
 
+        qval_0 = []
+        qval_1 = []
+        num_sim = []
         for i in range(0, numSimulations):
             # Sample distribution from prior for action transitions
-            prior = rbeta(1 + self.wins[state], 1 + self.trials[state] - self.wins[state])
-
+            prior = np.random.beta(1 + self.wins[state], 1 + self.trials[state] - self.wins[state])
             # Create defensive copy of current history 
             start_hist = history.History(self.hist.getStateCounts(), self.hist.getActionCounts())
             self.simulate(prior, 0, state, start_hist)
@@ -106,7 +111,6 @@ class BAMCP:
         # Select action with highest Q-Value
         action = -1
         max_val = float("-inf")
-
         for i in range(0, self.num_actions):
             qnode = node.QNode(self.hist, state, i)
             val = self.qnode_val[qnode]
@@ -117,25 +121,39 @@ class BAMCP:
         reward = self._pull(action, self.bandits.p)
 
         # Update history and prior based on observation
-        win = (reward != 0 and not self.mc.sample_cost) or (reward != -ops.SAMPLE_COST_CONST and self.mc.sample_cost)
+        win = False
+        if action == 0:
+            win = (reward != 0 and not self.mc.sample_cost) or (reward != -self.bandit_cost and self.mc.sample_cost)
+        else:
+            win = True
+
+        self.mc.miscalibrateAction(state, action, win)
+
         if win:
             self.alpha[state][action] += 1
         else:
             self.beta[state][action] += 1 
 
+
         self.hist.updateHist(state, action)
         self.steps_taken += 1
 
-
         """ DEBUGGING PURPOSES """
-        other_time = time.clock()
-        time_diff = timeDiff(other_time)
-        print "Steps Taken: %d | Time Diff: %s" % (self.steps_taken, str(time_diff))
+        if self.verbose:
+            other_time = time.clock()
+            time_diff = timeDiff(other_time)
 
+            print "Acton: %d | Reward: %f" % (action, reward)
+            print "Steps Taken: %d | Time Diff: %s" % (self.steps_taken, str(time_diff))
+
+        sys.stdout.flush()
+        
         self.wins = self.alpha
         self.trials = self.alpha + self.beta
 
-        return action
+        self.total_reward += reward
+
+        return (action, self.steps_taken)
 
 
     def simulate(self, prior, depth, state, hist):
@@ -238,16 +256,8 @@ class BAMCP:
             if (rand() < (1 - epsilon)):
                 return action
 
-            # Epsilon-greedy rollout policy
-            for i in range(0, len(dist)):
-                if i != action:
-                    dist[i] = epsilon / self.num_actions
-                else:
-                    dist[i] = 1 - epsilon + (epsilon / self.num_actions)
-            self._normalize(dist)
-
-            # Return sample of normalized distribution
-            return self._sample(dist)
+            """ SIMULATION OPTIMISATION """
+            return random.randint(0, self.num_actions - 1)
 
 
     def rollout(self, prior, depth, state, hist):
@@ -273,7 +283,7 @@ class BAMCP:
                 return rand() <= dist[action]
         else:
             if ops.NONE not in self.options:
-                return self.mc.miscalibratePull(action, dist)
+                return self.mc.miscalibratePull(action, dist, self.bandit_cost)
         return rand() <= dist[action]
 
    

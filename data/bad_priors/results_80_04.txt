@@ -1,0 +1,3027 @@
+SIMULATE WITH PROPERTIES:
+---------------------------
+BAMCP with ENV: N-armed Bernoulli Bandits
+Miscalibration with Options: ['Sets a cost to sampling a bandit, with known bandit having a value of 0.', 'Unfavorable prior for non-zero bandit(s)']
+BAMCP Settings: Discount: 0.950000, Epsilon: 0.100000, Num_Sims: 1500, Num_Steps: 50, Num_Trials: 10
+BAMCP Priors: (Alpha=[[ 0.  0.]], Beta=[[ 0.  0.]])
+True bandit probabilities: [ 0.5  1. ]
+---------------------------
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 5.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 10.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 15.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 20.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 25.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 30.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 35.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 40.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 45.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 51.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 56.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 61.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 66.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 71.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 76.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 81.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 86.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 91.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 97.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 102.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 107.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 112.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 117.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 122.58
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 127.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 132.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 137.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 143.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 148.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 153.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 158.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 163.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 168.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 173.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 178.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 184.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 189.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 194.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 199.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 204.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 209.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 214.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 219.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 225.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 230.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 235.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 241.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 247.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 254.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 260.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 266.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 272.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 279.06
+Acton: 0 | Reward: -0.800000
+Steps Taken: 4 | Time Diff: 285.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 291.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 297.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 303.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 310.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 316.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 322.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 329.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 336.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 342.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 348.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 354.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 360.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 367.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 373.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 379.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 386.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 392.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 398.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 405.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 411.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 417.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 424.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 430.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 436.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 443.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 449.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 455.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 462.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 468.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 474.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 480.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 487.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 493.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 499.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 506.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 512.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 518.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 523.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 529.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 535.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 541.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 547.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 552.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 558.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 564.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 570.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 575.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 581.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 587.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 593.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 599.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 605.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 611.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 616.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 622.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 628.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 634.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 640.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 645.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 651.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 657.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 664.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 670.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 676.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 682.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 689.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 695.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 702.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 708.58
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 714.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 720.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 727.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 733.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 739.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 746.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 752.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 758.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 765.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 771.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 777.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 783.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 790.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 796.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 802.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 809.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 815.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 821.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 828.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 834.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 840.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 847.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 853.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 860.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 866.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 872.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 879.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 885.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 891.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 897.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 904.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 910.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 916.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 922.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 928.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 934.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 941.41
+Acton: 0 | Reward: -0.800000
+Steps Taken: 11 | Time Diff: 947.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 954.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 960.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 966.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 973.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 979.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 985.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 992.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 998.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 1004.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 1010.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 1017.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 1023.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 1030.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 1036.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 1042.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 1048.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 1054.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 1061.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 1067.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 1073.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 1079.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 1086.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 1092.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 1098.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 1104.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 1111.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 1117.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 1123.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 1129.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 1135.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 1142.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 1148.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 1154.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 1161.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 1167.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 1173.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 1180.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 1186.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 1193.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 1199.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 1205.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 1211.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 1218.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 1224.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 1230.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 1237.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 1243.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 1249.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 1255.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 1262.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 1268.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 1274.58
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 1281.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 1287.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 1293.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 1299.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 1306.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 1312.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 1318.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 1324.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 1331.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 1337.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 1343.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 1350.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 1356.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 1362.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 1368.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 1375.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 1381.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 1387.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 1394.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 1400.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 1406.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 1413.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 1419.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 1425.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 1432.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 1438.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 1444.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 1451.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 1457.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 1464.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 1470.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 1476.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 1483.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 1489.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 1495.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 1501.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 1508.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 1514.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 1521.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 1527.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 1534.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 1540.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 1546.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 1552.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 1559.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 1565.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 1571.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 1578.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 1584.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 1590.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 1597.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 1603.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 1609.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 1615.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 1622.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 1628.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 1634.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 1640.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 1647.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 1653.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 1659.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 1666.36
+Acton: 0 | Reward: 0.200000
+Steps Taken: 26 | Time Diff: 1672.66
+Acton: 0 | Reward: -0.800000
+Steps Taken: 27 | Time Diff: 1678.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 1685.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 1691.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 1697.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 1704.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 1710.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 1717.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 1723.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 1729.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 1735.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 1742.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 1748.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 1754.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 1760.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 1767.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 1773.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 1780.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 1786.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 1792.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 1799.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 1805.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 1811.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 1818.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 1824.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 1830.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 1836.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 1843.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 1849.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 1855.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 1862.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 1868.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 1875.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 1881.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 1887.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 1894.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 1900.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 1906.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 1912.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 1919.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 1925.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 1931.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 1937.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 1944.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 1950.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 1956.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 1962.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 1969.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 1975.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 1981.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 1988.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 1994.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 2000.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 2006.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 2012.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 2019.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 2025.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 2031.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 2038.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 2044.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 2051.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 2057.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 2063.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 2069.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 2076.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 2082.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 2088.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 2094.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 2101.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 2107.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 2113.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 2119.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 2126.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 2132.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 2138.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 2144.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 2151.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 2158.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 2164.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 2170.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 2176.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 2182.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 2189.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 2195.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 2202.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 2208.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 2214.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 2221.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 2227.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 2234.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 2240.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 2246.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 2253.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 2259.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 2266.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 2272.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 2279.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 2286.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 2293.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 2300.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 2307.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 2313.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 2320.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 2327.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 2333.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 2340.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 2346.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 2352.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 2359.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 2365.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 2372.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 2378.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 2384.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 2390.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 2397.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 2403.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 2409.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 2416.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 2422.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 2428.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 2434.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 2441.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 2447.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 2453.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 2459.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 2466.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 2472.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 2479.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 2485.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 2492.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 2498.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 2504.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 2511.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 2517.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 2524.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 2530.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 2536.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 2543.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 2549.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 2555.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 2562.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 2568.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 2575.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 2581.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 2587.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 2593.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 2600.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 2606.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 2612.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 2618.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 2625.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 2631.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 2637.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 2643.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 2650.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 2656.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 2662.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 2669.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 2675.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 2681.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 2688.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 2694.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 2700.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 2707.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 2713.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 2720.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 2726.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 2732.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 2739.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 2745.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 2751.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 2757.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 2764.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 2770.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 2776.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 2782.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 2789.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 2795.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 2802.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 2808.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 2814.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 2820.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 2826.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 2833.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 2839.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 2845.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 2852.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 2858.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 2864.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 2871.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 2877.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 2883.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 2889.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 2896.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 2902.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 2908.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 2915.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 2921.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 2927.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 2934.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 2940.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 2946.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 2953.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 2959.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 2965.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 2972.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 2978.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 2984.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 2991.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 2997.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 3003.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 3010.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 3016.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 3022.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 3029.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 3035.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 3041.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 3048.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 3054.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 3060.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 3067.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 3073.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 3079.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 3086.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 3091.96
+RESULTS ------------->
+Alpha: [[  0.1  49.6]]
+Beta: [[ 0.3  0. ]]
+Trials: [[  0.4  49.6]]
+(cost,beta): (0.8, 0)
+(reward,accuracy): (-0.22000000000000003, 0.008)
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 3097.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 3103.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 3109.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 3114.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 3120.58
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 3126.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 3132.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 3137.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 3143.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 3149.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 3155.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 3161.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 3167.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 3173.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 3180.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 3186.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 3193.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 3199.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 3205.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 3211.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 3217.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 3224.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 3230.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 3236.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 3242.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 3249.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 3255.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 3261.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 3267.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 3273.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 3279.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 3286.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 3292.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 3298.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 3305.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 3311.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 3317.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 3324.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 3330.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 3336.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 3342.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 3349.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 3355.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 3361.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 3367.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 3374.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 3380.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 3386.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 3393.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 3399.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 3405.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 3411.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 3417.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 3423.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 3430.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 3437.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 3444.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 3450.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 3456.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 3463.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 3469.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 3475.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 3481.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 3487.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 3494.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 3500.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 3506.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 3513.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 3520.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 3526.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 3534.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 3540.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 3548.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 3554.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 3561.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 3568.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 3574.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 3581.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 3587.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 3594.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 3601.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 3607.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 3614.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 3620.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 3626.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 3632.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 3638.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 3645.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 3651.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 3657.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 3664.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 3670.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 3676.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 3683.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 3689.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 3695.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 3701.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 3707.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 3712.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 3718.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 3724.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 3731.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 3737.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 3744.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 3750.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 3756.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 3762.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 3768.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 3775.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 3781.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 3787.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 3793.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 3800.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 3806.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 3812.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 3819.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 3825.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 3831.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 3837.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 3844.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 3850.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 3856.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 3863.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 3869.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 3876.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 3882.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 3888.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 3895.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 3901.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 3907.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 3913.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 3920.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 3926.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 3932.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 3938.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 3944.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 3951.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 3957.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 3963.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 3969.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 3975.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 3981.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 3987.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 3994.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 4000.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 4006.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 4012.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 4019.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 4025.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 4031.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 4037.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 4043.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 4049.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 4056.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 4062.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 4068.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 4074.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 4081.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 4087.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 4093.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 4099.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 4105.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 4112.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 4118.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 4124.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 4130.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 4136.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 4141.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 4147.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 4152.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 4158.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 4164.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 4170.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 4175.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 4181.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 4187.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 4193.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 4200.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 4206.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 4212.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 4218.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 4224.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 4231.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 4237.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 4243.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 4249.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 4256.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 4262.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 4268.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 4274.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 4281.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 4287.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 4293.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 4299.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 4306.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 4312.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 4318.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 4324.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 4330.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 4336.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 4341.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 4347.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 4353.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 4359.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 4365.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 4370.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 4376.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 4381.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 4387.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 4394.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 4400.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 4406.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 4412.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 4418.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 4424.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 4430.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 4437.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 4443.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 4449.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 4456.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 4462.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 4468.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 4474.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 4480.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 4487.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 4493.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 4500.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 4506.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 4512.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 4518.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 4525.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 4531.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 4537.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 4543.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 4550.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 4556.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 4562.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 4569.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 4575.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 4581.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 4587.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 4593.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 4600.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 4606.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 4612.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 4618.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 4625.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 4631.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 4637.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 4643.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 4649.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 4656.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 4662.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 4668.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 4675.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 4681.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 4688.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 4694.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 4700.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 4707.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 4713.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 4719.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 4725.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 4731.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 4737.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 4743.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 4750.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 4756.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 4762.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 4769.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 4775.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 4781.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 4787.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 4794.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 4800.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 4806.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 4813.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 4819.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 4826.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 4832.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 4838.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 4844.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 4850.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 4857.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 4863.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 4870.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 4877.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 4883.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 4889.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 4895.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 4902.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 4908.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 4914.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 4920.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 4926.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 4933.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 4939.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 4945.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 4951.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 4957.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 4963.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 4970.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 4976.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 4982.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 4988.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 4995.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 5001.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 5008.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 5014.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 5020.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 5026.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 5032.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 5039.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 5045.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 5051.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 5057.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 5064.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 5070.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 5076.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 5083.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 5089.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 5095.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 5101.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 5108.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 5114.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 5120.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 5126.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 5133.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 5139.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 5145.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 5152.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 5158.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 5164.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 5170.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 5176.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 5182.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 5189.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 5195.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 5201.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 5207.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 5213.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 5219.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 5226.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 5232.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 5238.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 5244.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 5251.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 5257.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 5263.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 5269.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 5276.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 5282.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 5288.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 5295.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 5301.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 5307.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 5313.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 5319.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 5326.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 5332.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 5338.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 5345.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 5351.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 5358.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 5364.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 5371.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 5377.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 5383.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 5389.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 5395.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 5402.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 5408.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 5414.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 5421.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 5427.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 5433.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 5440.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 5446.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 5452.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 5459.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 5465.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 5471.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 5477.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 5483.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 5490.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 5496.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 5502.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 5508.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 5514.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 5520.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 5526.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 5533.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 5539.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 5545.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 5552.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 5558.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 5565.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 5571.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 5577.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 5583.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 5590.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 5596.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 5602.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 5608.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 5615.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 5621.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 5627.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 5633.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 5640.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 5646.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 5652.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 5659.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 5665.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 5671.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 5678.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 5684.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 5690.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 5696.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 5703.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 5709.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 5716.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 5722.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 5728.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 5735.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 5741.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 5747.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 5753.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 5760.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 5766.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 5772.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 5779.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 5785.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 5791.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 5797.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 5804.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 5810.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 5816.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 5823.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 5829.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 5835.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 5841.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 5847.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 5854.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 5860.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 5866.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 5873.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 5879.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 5885.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 5891.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 5898.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 5904.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 5910.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 5916.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 5923.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 5929.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 5935.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 5941.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 5947.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 5954.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 5960.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 5966.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 5972.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 5978.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 5985.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 5991.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 5997.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 6003.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 6010.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 6016.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 6022.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 6029.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 6035.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 6041.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 6047.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 6054.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 6060.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 6066.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 6072.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 6079.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 6085.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 6092.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 6098.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 6104.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 6111.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 6117.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 6124.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 6130.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 6136.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 6142.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 6148.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 6154.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 6161.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 6167.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 6173.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 6179.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 6185.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 6191.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 6198.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 6204.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 6210.65
+RESULTS ------------->
+Alpha: [[  0.  50.]]
+Beta: [[ 2.  0.]]
+Trials: [[  2.  50.]]
+(cost,beta): (0.8, 2)
+(reward,accuracy): (0.0, 0.0)
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 6217.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 6223.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 6229.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 6236.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 6242.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 6248.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 6254.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 6261.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 6267.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 6273.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 6279.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 6285.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 6291.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 6296.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 6302.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 6308.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 6313.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 6319.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 6325.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 6330.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 6336.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 6342.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 6348.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 6353.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 6359.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 6365.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 6371.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 6376.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 6382.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 6388.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 6394.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 6399.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 6405.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 6411.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 6416.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 6422.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 6428.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 6434.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 6440.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 6446.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 6452.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 6459.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 6465.12
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 6471.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 6477.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 6483.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 6490.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 6496.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 6502.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 6508.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 6515.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 6521.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 6527.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 6533.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 6539.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 6545.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 6550.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 6555.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 6561.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 6566.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 6571.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 6576.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 6581.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 6586.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 6591.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 6596.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 6601.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 6607.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 6612.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 6618.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 6623.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 6628.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 6633.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 6638.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 6643.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 6648.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 6653.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 6658.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 6663.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 6668.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 6674.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 6679.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 6684.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 6689.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 6694.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 6699.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 6704.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 6709.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 6714.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 6719.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 6724.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 6730.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 6735.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 6740.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 6745.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 6750.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 6755.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 6760.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 6765.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 6770.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 6775.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 6780.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 6786.02
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 6791.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 6796.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 6801.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 6806.38
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 6811.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 6816.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 6821.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 6826.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 6831.81
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 6836.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 6841.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 6847.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 6852.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 6857.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 6862.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 6867.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 6872.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 6877.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 6882.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 6887.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 6892.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 6897.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 6902.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 6908.06
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 6913.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 6918.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 6923.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 6928.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 6933.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 6938.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 6943.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 6948.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 6953.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 6958.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 6964.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 6969.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 6974.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 6979.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 6984.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 6989.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 6994.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 6999.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 7004.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 7009.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 7014.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 7019.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 7025.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 7030.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 7035.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 7040.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 7045.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 7050.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 7055.58
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 7060.66
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 7065.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 7070.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 7075.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 7080.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 7086.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 7091.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 7096.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 7101.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 7106.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 7111.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 7116.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 7121.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 7126.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 7131.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 7136.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 7142.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 7147.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 7152.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 7157.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 7162.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 7167.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 7172.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 7177.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 7182.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 7187.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 7192.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 7197.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 7203.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 7208.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 7213.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 7218.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 7223.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 7228.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 7233.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 7238.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 7243.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 7248.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 7253.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 7258.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 7264.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 7269.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 7274.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 7279.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 7284.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 7289.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 7294.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 7299.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 7304.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 7309.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 7314.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 7319.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 7325.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 7330.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 7335.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 7340.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 7345.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 7350.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 7355.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 7360.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 7365.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 7370.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 7375.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 7380.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 7385.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 7391.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 7396.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 7401.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 7406.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 7411.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 7416.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 7421.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 7426.64
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 7431.72
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 7436.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 7441.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 7446.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 7452.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 7457.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 7462.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 7467.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 7472.34
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 7477.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 7482.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 7487.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 7492.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 7497.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 7502.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 7507.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 7513.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 7518.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 7523.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 7528.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 7533.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 7538.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 7543.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 7548.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 7553.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 7558.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 7563.94
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 7569.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 7574.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 7579.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 7584.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 7589.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 7594.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 7599.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 7604.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 7609.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 7614.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 7619.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 7624.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 7630.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 7635.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 7640.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 7645.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 7650.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 7655.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 7660.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 7665.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 7670.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 7675.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 7681.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 7686.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 7691.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 7696.27
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 7701.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 7706.46
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 7711.54
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 7716.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 7721.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 7726.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 7731.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 7736.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 7742.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 7747.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 7752.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 7757.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 7762.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 7767.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 7772.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 7777.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 7782.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 7787.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 7792.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 7798.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 7803.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 7808.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 7813.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 7818.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 7823.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 7828.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 7833.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 7838.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 7843.86
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 7848.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 7854.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 7859.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 7864.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 7869.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 7874.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 7879.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 7884.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 7889.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 7894.73
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 7899.83
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 7904.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 7909.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 7915.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 7920.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 7925.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 7930.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 7935.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 7940.48
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 7945.57
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 7950.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 7955.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 7960.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 7965.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 7971.0
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 7976.08
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 7981.16
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 7986.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 7991.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 7996.4
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 8001.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 8006.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 8011.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 8016.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 8021.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 8026.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 8031.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 8037.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 8042.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 8047.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 8052.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 8057.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 8062.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 8067.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 8072.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 8077.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 8082.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 8087.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 8093.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 8098.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 8103.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 8108.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 8113.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 8118.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 8123.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 8128.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 8133.8
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 8138.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 8143.97
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 8149.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 8154.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 8159.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 8164.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 8169.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 8174.53
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 8179.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 8184.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 8189.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 8194.89
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 8199.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 8205.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 8210.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 8215.26
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 8220.35
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 8225.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 8230.51
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 8235.59
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 8240.67
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 8245.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 8250.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 8255.92
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 8261.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 8266.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 8271.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 8276.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 8281.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 8286.42
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 8291.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 8296.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 8301.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 8306.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 8311.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 8316.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 8322.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 8327.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 8332.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 8337.32
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 8342.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 8347.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 8352.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 8357.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 8362.77
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 8367.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 8372.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 8378.01
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 8383.09
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 8388.18
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 8393.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 8398.33
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 8403.41
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 8408.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 8413.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 8418.65
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 8423.74
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 8428.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 8433.9
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 8438.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 8444.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 8449.15
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 8454.23
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 8459.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 8464.39
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 8469.47
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 8474.55
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 8479.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 8484.7
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 8489.79
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 8494.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 8499.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 8505.04
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 8510.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 8515.2
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 8520.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 8525.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 8530.45
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 8535.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 8540.61
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 8545.69
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 8550.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 1 | Time Diff: 8555.87
+Acton: 1 | Reward: 0.000000
+Steps Taken: 2 | Time Diff: 8560.95
+Acton: 1 | Reward: 0.000000
+Steps Taken: 3 | Time Diff: 8566.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 4 | Time Diff: 8571.13
+Acton: 1 | Reward: 0.000000
+Steps Taken: 5 | Time Diff: 8576.21
+Acton: 1 | Reward: 0.000000
+Steps Taken: 6 | Time Diff: 8581.28
+Acton: 1 | Reward: 0.000000
+Steps Taken: 7 | Time Diff: 8586.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 8 | Time Diff: 8591.44
+Acton: 1 | Reward: 0.000000
+Steps Taken: 9 | Time Diff: 8596.52
+Acton: 1 | Reward: 0.000000
+Steps Taken: 10 | Time Diff: 8601.6
+Acton: 1 | Reward: 0.000000
+Steps Taken: 11 | Time Diff: 8606.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 12 | Time Diff: 8611.76
+Acton: 1 | Reward: 0.000000
+Steps Taken: 13 | Time Diff: 8616.84
+Acton: 1 | Reward: 0.000000
+Steps Taken: 14 | Time Diff: 8621.93
+Acton: 1 | Reward: 0.000000
+Steps Taken: 15 | Time Diff: 8626.99
+Acton: 1 | Reward: 0.000000
+Steps Taken: 16 | Time Diff: 8632.07
+Acton: 1 | Reward: 0.000000
+Steps Taken: 17 | Time Diff: 8637.14
+Acton: 1 | Reward: 0.000000
+Steps Taken: 18 | Time Diff: 8642.22
+Acton: 1 | Reward: 0.000000
+Steps Taken: 19 | Time Diff: 8647.29
+Acton: 1 | Reward: 0.000000
+Steps Taken: 20 | Time Diff: 8652.36
+Acton: 1 | Reward: 0.000000
+Steps Taken: 21 | Time Diff: 8657.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 22 | Time Diff: 8662.5
+Acton: 1 | Reward: 0.000000
+Steps Taken: 23 | Time Diff: 8667.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 24 | Time Diff: 8672.62
+Acton: 1 | Reward: 0.000000
+Steps Taken: 25 | Time Diff: 8677.68
+Acton: 1 | Reward: 0.000000
+Steps Taken: 26 | Time Diff: 8682.75
+Acton: 1 | Reward: 0.000000
+Steps Taken: 27 | Time Diff: 8687.82
+Acton: 1 | Reward: 0.000000
+Steps Taken: 28 | Time Diff: 8692.88
+Acton: 1 | Reward: 0.000000
+Steps Taken: 29 | Time Diff: 8697.96
+Acton: 1 | Reward: 0.000000
+Steps Taken: 30 | Time Diff: 8703.03
+Acton: 1 | Reward: 0.000000
+Steps Taken: 31 | Time Diff: 8708.1
+Acton: 1 | Reward: 0.000000
+Steps Taken: 32 | Time Diff: 8713.17
+Acton: 1 | Reward: 0.000000
+Steps Taken: 33 | Time Diff: 8718.24
+Acton: 1 | Reward: 0.000000
+Steps Taken: 34 | Time Diff: 8723.3
+Acton: 1 | Reward: 0.000000
+Steps Taken: 35 | Time Diff: 8728.37
+Acton: 1 | Reward: 0.000000
+Steps Taken: 36 | Time Diff: 8733.43
+Acton: 1 | Reward: 0.000000
+Steps Taken: 37 | Time Diff: 8738.49
+Acton: 1 | Reward: 0.000000
+Steps Taken: 38 | Time Diff: 8743.56
+Acton: 1 | Reward: 0.000000
+Steps Taken: 39 | Time Diff: 8748.63
+Acton: 1 | Reward: 0.000000
+Steps Taken: 40 | Time Diff: 8753.71
+Acton: 1 | Reward: 0.000000
+Steps Taken: 41 | Time Diff: 8758.78
+Acton: 1 | Reward: 0.000000
+Steps Taken: 42 | Time Diff: 8763.85
+Acton: 1 | Reward: 0.000000
+Steps Taken: 43 | Time Diff: 8768.91
+Acton: 1 | Reward: 0.000000
+Steps Taken: 44 | Time Diff: 8773.98
+Acton: 1 | Reward: 0.000000
+Steps Taken: 45 | Time Diff: 8779.05
+Acton: 1 | Reward: 0.000000
+Steps Taken: 46 | Time Diff: 8784.11
+Acton: 1 | Reward: 0.000000
+Steps Taken: 47 | Time Diff: 8789.19
+Acton: 1 | Reward: 0.000000
+Steps Taken: 48 | Time Diff: 8794.25
+Acton: 1 | Reward: 0.000000
+Steps Taken: 49 | Time Diff: 8799.31
+Acton: 1 | Reward: 0.000000
+Steps Taken: 50 | Time Diff: 8804.37
+RESULTS ------------->
+Alpha: [[  0.  50.]]
+Beta: [[ 4.  0.]]
+Trials: [[  4.  50.]]
+(cost,beta): (0.8, 4)
+(reward,accuracy): (0.0, 0.0)
+bad_prior

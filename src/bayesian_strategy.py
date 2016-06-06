@@ -1,4 +1,3 @@
-from pymc import rbeta
 import numpy as np
 import sys
 import bandits
@@ -51,7 +50,7 @@ class BayesianStrategy:
 			#sample from the bandits's priors, and select the largest sample
 			print "wins: " + str(self.wins)
 			print "trials: " + str(self.trials)
-			dist = rbeta(1 + self.wins, 1 + self.trials - self.wins)
+			dist = np.random.beta(1 + self.wins, 1 + self.trials - self.wins)
 			choice = np.argmax(dist)
 			print "dist: " + str(dist)
 			print "choice: " + str(choice)

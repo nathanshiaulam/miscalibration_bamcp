@@ -20,19 +20,19 @@ class Miscalibration:
         self.unfavorable_prior = False
         self.forget_rate = False
         self.unfavorable_env = False
-        self.anhedonia = False
+        self.trembling_hand = False
 
         self._setFlags(bamcp.options)
 
-    def miscalibratePriors(self):
+    def miscalibratePriors(self, value):
         if not self.bamcp.test_gittins:
             if self.unfavorable_prior:
-                worst_bandit = np.argmin(self.bamcp.bandits.p)
+                zero_bandit = self.bamcp.bandits.p[len(self.bamcp.bandits) - 1]
                 for a in range(self.bamcp.num_actions):
-                    if a != worst_bandit:
-                        alpha_upper_bound = self.bamcp.alpha[self.bamcp.start_state][a] + self.bamcp.num_steps
-                        self.bamcp.beta[self.bamcp.start_state][a] += alpha_upper_bound * ops.UNFAVORABLE_PRIOR_CONST
-                print "Miscalibrated Priors (Alpha, Beta): (%s, %s)" % (str(self.bamcp.alpha), str(self.bamcp.beta))
+                    if a != zero_bandit:
+                        self.bamcp.beta[self.bamcp.start_state][a] += value
+                print "Miscalibrated Priors: (Alpha, Beta): (%s, %s)" % (str(self.bamcp.alpha), str(self.bamcp.beta))
+                print "Miscalibrated Bandit Cost: %f" % self.bamcp.bandit_cost
 
         self.bamcp.wins = self.bamcp.alpha
         self.bamcp.trials = self.bamcp.alpha + self.bamcp.beta
@@ -50,7 +50,7 @@ class Miscalibration:
 
         self.bamcp.hist = history.History(state_counts, action_counts)
 
-    def miscalibrateAction(self):
+    def miscalibrateAction(self, state, action, win):
 
         """ 
         MISCALIBRATION: Implements a forget rate for 
@@ -58,8 +58,8 @@ class Miscalibration:
         discount 
         """
         if self.forget_rate:
-            self.bamcp.alpha = (1 - ops.FORGET_RATE_EPSILON) * self.bamcp.alpha 
-            self.bamcp.beta = (1 - ops.FORGET_RATE_EPSILON) * self.bamcp.beta
+            self.bamcp.alpha = (1 - self.bamcp.forget_rate) * self.bamcp.alpha + self.bamcp.forget_rate * ops.FORGET_RATE_ALPHA 
+            self.bamcp.beta = (1 - self.bamcp.forget_rate) * self.bamcp.beta + self.bamcp.forget_rate * ops.FORGET_RATE_BETA
 
         """ 
         MISCALIBRATION: Leaves agent in unfavorable environment
@@ -73,9 +73,9 @@ class Miscalibration:
         if self.unfavorable_env:
             unfavorable_env_time = float(self.bamcp.num_steps) / float(ops.UNFAVORABLE_ENV_TIME) 
             if (self.bamcp.steps_taken < unfavorable_env_time):
-                worst_bandit = np.argmin(self.bamcp.bandits.p)
+                zero_bandit = self.bamcp.bandits.p[len(self.bamcp.bandits) - 1]
                 for a in range(self.bamcp.num_actions):
-                    if a != worst_bandit:
+                    if a != zero_bandit:
                         self.bamcp.beta[state][a] += ops.UNFAVORABLE_ENV_FACTOR
 
         """ 
@@ -85,36 +85,25 @@ class Miscalibration:
         if self.overgeneralize:
             for a in range(self.bamcp.num_actions):
                 if a != action:
-                    win = (reward != 0 and not self.sample_cost) or (reward != -ops.SAMPLE_COST_CONST and self.sample_cost)
                     if win:
-                        self.bamcp.alpha[state][i] += 1
+                        self.bamcp.alpha[state][a] += 1
                     else:
-                        self.bamcp.beta[state][i] += 1
+                        self.bamcp.beta[state][a] += 1
 
-        """ 
-        MISCALIBRATION: Generalizes success/failure
-        of bandit to all other bandits
-        """
-        if self.anhedonia:
-            self.bamcp.alpha *= math.pow(1 - ops.ANHEDONIA_EPSILON, self.steps_taken)
-            self.bamcp.beta *= math.pow(1 - ops.ANHEDONIA_EPSILON, self.steps_taken)
-
-    def miscalibratePull(self, action, dist):
-        if self.unfavorable_env:
-            unfavorable_env_time = float(self.bamcp.num_steps) / float(ops.UNFAVORABLE_ENV_TIME) 
-            if self.bamcp.steps_taken < unfavorable_env_time:
-                return 0
-
+      
+    def miscalibratePull(self, action, dist, cost):
+        if self.trembling_hand:
+            if rand() < (1 - ops.TREMBLING_HAND_CONST):
+                action = np.random.choice(self.bamcp.bandits.p)
         if self.sample_cost:
-            min_action = np.argmin(self.bamcp.bandits.p)
-            if action == min_action:
+            zero_bandit = self.bamcp.bandits.p[len(self.bamcp.bandits) - 1]
+            if action == zero_bandit:
                 return 0
             else:
                 if rand() <= dist[action]:
-                    return 1 - float(ops.SAMPLE_COST_CONST)
+                    return 1 - cost
                 else:
-                    return -1 * ops.SAMPLE_COST_CONST
-
+                    return -1 * cost
         return rand() <= dist[action]
 
     def _setFlags(self, options):
@@ -133,6 +122,3 @@ class Miscalibration:
 
         if ops.FORGET_RATE in options:
             self.forget_rate = True
-
-        if ops.ANHEDONIA in options:
-            self.anhedonia = True
