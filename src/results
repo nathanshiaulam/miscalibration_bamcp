@@ -1,0 +1,10 @@
+SIMULATE WITH PROPERTIES:
+---------------------------
+BAMCP with ENV: N-armed Bernoulli Bandits
+Miscalibration with Options: ['Sets a cost to sampling a bandit, with known bandit having a value of 0.', 'Include a do-nothing bandit that returns 0 reward with probability 1', 'Unfavorable prior for non-zero bandit(s)']
+BAMCP Settings: Discount: 0.950000, Epsilon: 0.010000, Num_Sims: 1000, Num_Steps: 50, Num_Trials: 1
+BAMCP Priors: (Alpha=[[ 0.  0.]], Beta=[[ 0.  0.]])
+True bandit probabilities: [ 0.5  1. ]
+---------------------------
+Miscalibrated Priors: (Alpha, Beta): ([[0 2]], [[0 2]])
+Miscalibrated Bandit Cost: 0.000000

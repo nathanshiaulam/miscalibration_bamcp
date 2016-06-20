@@ -42,11 +42,15 @@ class Flags:
 
 	OVER_GENERALIZE = 'g'
 	OVER_GENERALIZE_DESC = 'Over generalize action outcome'
+	OVER_GENERALIZE_PROB = .1
+	OVER_GENERALIZE_ALPHA = 100
 
 	UNFAVORABLE_PRIOR = 'p'
 	UNFAVORABLE_PRIOR_DESC = 'Unfavorable prior for non-zero bandit(s)'
-	UNFAVORABLE_PRIOR_CONST = 0
+	UNFAVORABLE_PRIOR_MAX = 10 	# Preferred: np.argmax(alpha) + num_steps
 	UNFAVORABLE_PRIOR_FACTOR = 2
+	UNFAVORABLE_PRIOR_ALPHA = np.array([[0, 0]])
+	UNFAVORABLE_PRIOR_BETA = np.array([[0, 0]])
 
 	# Wrong Inference
 	FORGET_RATE = 'f'
@@ -67,3 +71,4 @@ class Flags:
 
 	DO_NOTHING = 'd'
 	DO_NOTHING_DESC = 'Include a do-nothing bandit that returns 0 reward with probability 1'
+	DO_NOTHING_BETA = 0

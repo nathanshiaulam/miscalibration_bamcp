@@ -65,8 +65,8 @@ class BAMCP:
         self.alpha = np.array(vals[params.ALPHA])
         self.beta = np.array(vals[params.BETA])
 
-        self.wins = self.alpha
-        self.trials = self.alpha + self.beta
+        self.wins = np.copy(self.alpha)
+        self.trials = np.copy(self.alpha + self.beta)
 
         # Total action and state count
         action_counts = np.zeros(self.num_actions)
@@ -133,7 +133,6 @@ class BAMCP:
             self.alpha[state][action] += 1
         else:
             self.beta[state][action] += 1 
-
 
         self.hist.updateHist(state, action)
         self.steps_taken += 1

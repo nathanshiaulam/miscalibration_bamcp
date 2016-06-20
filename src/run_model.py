@@ -19,6 +19,20 @@ from constants import Envs as envs
 
 rand = np.random.rand
 
+""" TO DO: 
+    
+    - REFACTOR CODE SO THAT MISCALIBRATION OF PRIOR 
+      DIRECTLY SETS BETA ARR/ALPHA ARR
+
+    - SEPARATE FROM DO_NOTHING 
+
+    - SET OVER_GENERALIZE STRATEGY: 
+    -- INCLUDE WEAK ARM WITH BOOSTED ALPHA
+    -- MISCALIBRATE PRIORS ACCORDINGLY WITH BETA VALUES 
+    -- OVERGENEREALIZATION PREVENTS MODEL FROM DISCOVERING
+
+""" 
+
 def main():
 
     args = sys.argv
@@ -29,8 +43,9 @@ def main():
 
     printHeader(env_desc, options_desc, vals)
 
-    bad_prior = ops.UNFAVORABLE_PRIOR_CONST
-    bad_prior_max = np.argmax(vals[params.ALPHA]) + vals[params.NUM_STEPS]
+    bad_prior_alpha = np.copy(ops.UNFAVORABLE_PRIOR_ALPHA)
+    bad_prior_beta = np.copy(ops.UNFAVORABLE_PRIOR_BETA)
+    bad_prior_max = np.copy(np.argmax(vals[params.ALPHA]) + vals[params.NUM_STEPS])
 
     """ EXTRACT VALUES FROM VALS """
     cost = vals[params.COST]
@@ -48,14 +63,13 @@ def main():
         if ops.OVER_GENERALIZE in options:
             beta_reward = defaultdict(list)
             beta_accuracy = defaultdict(list)
-            last_two = [1.0, 1.0]
 
             while bad_prior <= bad_prior_max:
 
-                vals[params.BAD_PRIOR] = bad_prior
+                vals[params.BAD_PRIOR] = (bad_prior_alpha, bad_prior_beta)
                 ans = bernoulliBandits(vals)
 
-                print "(cost,beta): (%s, %s)" % (str(cost), str(bad_prior))
+                print "(cost,beta): (%s, %s)" % (str(cost), str(bad_prior_beta))
                 print "(reward,accuracy): %s" % str(ans)
                 sys.stdout.flush()
                 last_two[1] = last_two[0]
@@ -84,7 +98,7 @@ def main():
             beta_accuracy = defaultdict(list)
 
             vals[params.FORGET_RATE] = forget_rate
-            vals[params.BAD_PRIOR] = bad_prior
+            vals[params.BAD_PRIOR] = (bad_prior_alpha, bad_prior_beta)
             ans = bernoulliBandits(vals)
             
             print "(cost,beta,forget_rate): (%s, %s, %s)" % (str(cost), str(bad_prior), str(forget_rate))
@@ -97,11 +111,24 @@ def main():
 
             generateFigs(beta_reward, beta_accuracy, options)
 
-        else:
-            simulateMiscalPriors(bad_prior, bad_prior_max, vals)
+        elif ops.DO_NOTHING in options:
+            simulateDoNothing(vals)
 
-def simulateMiscalPriors(bad_prior, bad_prior_max, vals):
+
+# def simulateOvergeneralization():
+
+
+def simulateDoNothing(vals):
     last_two = [1.0, 1.0]
+
+    start_state = 0
+
+    """ Initial miscalibration for each state-action pair """
+    bad_prior_alpha = np.copy(vals[params.BAD_PRIOR][0])
+    bad_prior_beta = np.copy(vals[params.BAD_PRIOR][1])
+
+    bad_prior_val = np.argmax(bad_prior_beta[start_state])
+    bad_prior_max = ops.UNFAVORABLE_PRIOR_MAX
 
     beta_reward = {}
     beta_accuracy = {}
@@ -111,12 +138,12 @@ def simulateMiscalPriors(bad_prior, bad_prior_max, vals):
 
     cost = vals[params.COST]
 
-    while bad_prior <= bad_prior_max:
+    while bad_prior_val <= bad_prior_max:
 
-        vals[params.BAD_PRIOR] = bad_prior
         ans = bernoulliBandits(vals)
 
-        print "(cost,beta): (%s, %s)" % (str(cost), str(bad_prior))
+        print "(cost): (%s)" % str(cost)
+        print "Alpha: (%s) | Beta: (%s)" % (str(bad_prior_alpha), str(bad_prior_beta))
         print "(reward,accuracy): %s" % str(ans)
         sys.stdout.flush()
 
@@ -126,26 +153,30 @@ def simulateMiscalPriors(bad_prior, bad_prior_max, vals):
         last_two[0] = ans[1]
 
         """ BETA -> REWARD """
-        beta_reward[bad_prior] = ans[0]
+        beta_reward[bad_prior_val] = ans[0]
 
         """ BETA -> ACCURACY"""
-        beta_accuracy[bad_prior] = ans[1]
+        beta_accuracy[bad_prior_val] = ans[1]
 
         """ BETA -> LIST OF ACCURACY PER TRIAL """
-        beta_accuracy_trial[bad_prior] = ans[2]
+        beta_accuracy_trial[bad_prior_val] = ans[2]
 
         """ BETA -> LIST OF REWARD PER TRIAL """
-        beta_reward_trial[bad_prior] = ans[3]
+        beta_reward_trial[bad_prior_val] = ans[3]
 
         if last_two[0] == 0 and last_two[1] == 0:
-            num_left = (bad_prior_max - bad_prior) / ops.UNFAVORABLE_PRIOR_FACTOR
+            num_left = (bad_prior_max - bad_prior_val) / ops.UNFAVORABLE_PRIOR_FACTOR
             for i in range(num_left):
-                beta_reward[bad_prior] = 0.0
-                beta_accuracy[bad_prior] = 0.0
-                bad_prior += ops.UNFAVORABLE_PRIOR_FACTOR
+                beta_reward[bad_prior_val] = 0.0
+                beta_accuracy[bad_prior_val] = 0.0
+                bad_prior_val += ops.UNFAVORABLE_PRIOR_FACTOR
 
+        """ Increment beta for all bandits except for do-nothing """
+        bad_prior_val += ops.UNFAVORABLE_PRIOR_FACTOR
+        for i in range(len(bad_prior_beta[0]) - 1):
+            bad_prior_beta[0][i] = bad_prior_val
 
-        bad_prior += ops.UNFAVORABLE_PRIOR_FACTOR
+        vals[params.BAD_PRIOR] = (np.array([[0,0]]), bad_prior_beta)
 
     """ CALCULATE STD DEV FOR EACH BETA """ 
     stddev_acc = {}
@@ -210,16 +241,16 @@ def plotBadPriors(beta_reward, beta_acc, stddev_acc, stddev_reward, vals):
     fg_acc.show()
     fg_reward.show()
 
-
-
-
 def fetchValues(args):
+
     options = list(args[1])
     environment = args[2]
 
     arr = ast.literal_eval(args[3])
-    if environment == envs.NORM_BANDITS:
+    if ops.DO_NOTHING in options:
         arr.append(1) # Append known do-nothing bandit
+    if ops.OVER_GENERALIZE in options:
+        arr.append(envs.OVER_GENERALIZE_PROB) # Append weak bandit with high alpha
 
     """ TRUE PROBABILITY OF SUCCESS FOR EACH ACTION """
     p_arr = np.array(arr) 
@@ -235,6 +266,7 @@ def fetchValues(args):
     alpha = np.zeros(shape=(1, len(p_arr)))
     beta = np.zeros(shape=(1, len(p_arr)))
     verbose = 0
+
     if len(args) > 9:
         alpha = np.array(ast.literal_eval(args[9]))
     if len(args) > 10:
@@ -255,7 +287,7 @@ def fetchValues(args):
         params.BETA : beta, 
         params.VERBOSE : verbose,
         params.COST : ops.SAMPLE_COST_CONST,
-        params.BAD_PRIOR : ops.UNFAVORABLE_PRIOR_CONST,
+        params.BAD_PRIOR : (ops.UNFAVORABLE_PRIOR_BETA, ops.UNFAVORABLE_PRIOR_BETA),
         params.FORGET_RATE : ops.FORGET_RATE_EPSILON,
     }
 

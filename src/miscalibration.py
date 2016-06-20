@@ -21,21 +21,28 @@ class Miscalibration:
         self.forget_rate = False
         self.unfavorable_env = False
         self.trembling_hand = False
+        self.do_nothing = False
 
         self._setFlags(bamcp.options)
 
-    def miscalibratePriors(self, value):
+    def miscalibratePriors(self, bad_priors):
         if not self.bamcp.test_gittins:
-            if self.unfavorable_prior:
-                zero_bandit = self.bamcp.bandits.p[len(self.bamcp.bandits) - 1]
-                for a in range(self.bamcp.num_actions):
-                    if a != zero_bandit:
-                        self.bamcp.beta[self.bamcp.start_state][a] += value
-                print "Miscalibrated Priors: (Alpha, Beta): (%s, %s)" % (str(self.bamcp.alpha), str(self.bamcp.beta))
-                print "Miscalibrated Bandit Cost: %f" % self.bamcp.bandit_cost
 
-        self.bamcp.wins = self.bamcp.alpha
-        self.bamcp.trials = self.bamcp.alpha + self.bamcp.beta
+            """ MISCALIBRATE PRIOR FROM CONFIG """
+            if self.unfavorable_prior:
+                self.bamcp.alpha = np.copy(bad_priors[0])
+                self.bamcp.beta = np.copy(bad_priors[1])
+
+            # if self.do_nothing:
+            #     zero_bandit = self.bamcp.bandits.p[len(self.bamcp.bandits) - 1]
+            #     for a in range(self.bamcp.num_actions):
+            #         if a != zero_bandit:
+            #             self.bamcp.beta[self.bamcp.start_state][a] += beta_val
+            print "Miscalibrated Priors: (Alpha, Beta): (%s, %s)" % (str(self.bamcp.alpha), str(self.bamcp.beta))
+            print "Miscalibrated Bandit Cost: %f" % self.bamcp.bandit_cost
+
+        self.bamcp.wins = np.copy(self.bamcp.alpha)
+        self.bamcp.trials = np.copy(self.bamcp.alpha + self.bamcp.beta)
 
         # Total action and state count
         action_counts = np.zeros(self.bamcp.num_actions)
@@ -122,3 +129,6 @@ class Miscalibration:
 
         if ops.FORGET_RATE in options:
             self.forget_rate = True
+
+        if ops.DO_NOTHING in options:
+            self.do_nothing = True
