@@ -20,11 +20,6 @@ from constants import Envs as envs
 rand = np.random.rand
 
 """ TO DO: 
-    
-    - REFACTOR CODE SO THAT MISCALIBRATION OF PRIOR 
-      DIRECTLY SETS BETA ARR/ALPHA ARR
-
-    - SEPARATE FROM DO_NOTHING 
 
     - SET OVER_GENERALIZE STRATEGY: 
     -- INCLUDE WEAK ARM WITH BOOSTED ALPHA
@@ -61,34 +56,7 @@ def main():
     if envs.NORM_BANDITS == environment:
         
         if ops.OVER_GENERALIZE in options:
-            beta_reward = defaultdict(list)
-            beta_accuracy = defaultdict(list)
-
-            while bad_prior <= bad_prior_max:
-
-                vals[params.BAD_PRIOR] = (bad_prior_alpha, bad_prior_beta)
-                ans = bernoulliBandits(vals)
-
-                print "(cost,beta): (%s, %s)" % (str(cost), str(bad_prior_beta))
-                print "(reward,accuracy): %s" % str(ans)
-                sys.stdout.flush()
-                last_two[1] = last_two[0]
-                last_two[0] = ans[1]
-
-                if last_two[0] == 0 and last_two[1] == 0:
-                    num_left = (.8 - cost) / ops.SAMPLE_COST_FACTOR
-                    for i in range(num_left):
-                        beta_reward[cost].append((cost, 0.0))
-                        beta_accuracy[cost].append((cost, 0.0))
-                        cost += ops.SAMPLE_COST_FACTOR
-                else :
-                    beta_reward[0].append((cost, ans[0]))
-                    beta_accuracy[0].append((cost, ans[1]))
-                    cost += ops.SAMPLE_COST_FACTOR
-
-                bad_prior += ops.UNFAVORABLE_PRIOR_FACTOR
-
-            generateFigs(beta_reward, beta_accuracy, options)
+            simulateOvergeneralization(vals)
 
         elif ops.FORGET_RATE in options:
             cost = .3
@@ -115,8 +83,64 @@ def main():
             simulateDoNothing(vals)
 
 
-# def simulateOvergeneralization():
+def simulateOvergeneralization(vals):
 
+    start_state = 0
+
+    """ Initial miscalibration for each state-action pair """
+    bad_prior_alpha = np.copy(vals[params.BAD_PRIOR][0])
+    bad_prior_beta = np.copy(vals[params.BAD_PRIOR][1])
+
+    bad_prior_val = np.argmax(bad_prior_alpha[start_state])
+    bad_prior_max = ops.UNFAVORABLE_PRIOR_ALPHA_MAX
+
+    alpha_reward = {}
+    alpha_accuracy = {}
+
+    alpha_reward_trial = defaultdict(list)
+    alpha_accuracy_trial = defaultdict(list)
+
+    cost = vals[params.COST]
+
+    while bad_prior_val <= bad_prior_max:
+
+        ans = bernoulliBandits(vals)
+
+        print "(cost): (%s)" % str(vals[params.COST])
+        print "Alpha: (%s) | Beta: (%s)" % (str(bad_prior_alpha), str(bad_prior_beta))
+        print "(reward,accuracy): %s" % str(ans)
+        sys.stdout.flush()
+
+        """ ALPHA -> REWARD """
+        alpha_reward[bad_prior_val] = ans[0]
+
+        """ ALPHA -> ACCURACY"""
+        alpha_accuracy[bad_prior_val] = ans[1]
+
+        """ ALPHA -> LIST OF ACCURACY PER TRIAL """
+        alpha_accuracy_trial[bad_prior_val] = ans[2]
+
+        """ ALPHA -> LIST OF REWARD PER TRIAL """
+        alpha_reward_trial[bad_prior_val] = ans[3]
+
+        """ Increment alpha only for unfavorable bandit """
+        bad_prior_val += ops.UNFAVORABLE_PRIOR_ALPHA_FACTOR
+        bad_prior_alpha[0][len(bad_prior_alpha[0]) - 1] = bad_prior_val
+
+        vals[params.BAD_PRIOR] = (bad_prior_alpha, bad_prior_beta)
+
+    """ CALCULATE STD DEV FOR EACH BETA """ 
+    stddev_acc = {}
+    stddev_reward = {}
+
+    for k, v in alpha_accuracy_trial.iteritems():
+        acc_list = np.array(v)
+        stddev_acc[k] = np.std(acc_list)
+    for k, v in alpha_reward_trial.iteritems():
+        reward_list = np.array(v)
+        stddev_reward[k] = np.std(reward_list)
+
+    plotBadPriors(alpha_reward, alpha_accuracy, stddev_acc.values(), stddev_reward.values(), vals)
 
 def simulateDoNothing(vals):
     last_two = [1.0, 1.0]
@@ -128,7 +152,7 @@ def simulateDoNothing(vals):
     bad_prior_beta = np.copy(vals[params.BAD_PRIOR][1])
 
     bad_prior_val = np.argmax(bad_prior_beta[start_state])
-    bad_prior_max = ops.UNFAVORABLE_PRIOR_MAX
+    bad_prior_max = ops.UNFAVORABLE_PRIOR_BETA_MAX
 
     beta_reward = {}
     beta_accuracy = {}
@@ -136,13 +160,11 @@ def simulateDoNothing(vals):
     beta_reward_trial = defaultdict(list)
     beta_accuracy_trial = defaultdict(list)
 
-    cost = vals[params.COST]
-
     while bad_prior_val <= bad_prior_max:
 
         ans = bernoulliBandits(vals)
 
-        print "(cost): (%s)" % str(cost)
+        print "(cost): (%s)" % str(vals[params.COST])
         print "Alpha: (%s) | Beta: (%s)" % (str(bad_prior_alpha), str(bad_prior_beta))
         print "(reward,accuracy): %s" % str(ans)
         sys.stdout.flush()
@@ -165,14 +187,14 @@ def simulateDoNothing(vals):
         beta_reward_trial[bad_prior_val] = ans[3]
 
         if last_two[0] == 0 and last_two[1] == 0:
-            num_left = (bad_prior_max - bad_prior_val) / ops.UNFAVORABLE_PRIOR_FACTOR
+            num_left = (bad_prior_max - bad_prior_val) / ops.UNFAVORABLE_PRIOR_BETA_FACTOR
             for i in range(num_left):
                 beta_reward[bad_prior_val] = 0.0
                 beta_accuracy[bad_prior_val] = 0.0
-                bad_prior_val += ops.UNFAVORABLE_PRIOR_FACTOR
+                bad_prior_val += ops.UNFAVORABLE_PRIOR_BETA_FACTOR
 
         """ Increment beta for all bandits except for do-nothing """
-        bad_prior_val += ops.UNFAVORABLE_PRIOR_FACTOR
+        bad_prior_val += ops.UNFAVORABLE_PRIOR_BETA_FACTOR
         for i in range(len(bad_prior_beta[0]) - 1):
             bad_prior_beta[0][i] = bad_prior_val
 
@@ -250,7 +272,7 @@ def fetchValues(args):
     if ops.DO_NOTHING in options:
         arr.append(1) # Append known do-nothing bandit
     if ops.OVER_GENERALIZE in options:
-        arr.append(envs.OVER_GENERALIZE_PROB) # Append weak bandit with high alpha
+        arr.append(ops.OVER_GENERALIZE_PROB) # Append weak bandit with high alpha
 
     """ TRUE PROBABILITY OF SUCCESS FOR EACH ACTION """
     p_arr = np.array(arr) 
